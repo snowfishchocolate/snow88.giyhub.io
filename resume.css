@@ -12,7 +12,7 @@ a{
 .slide{
     position: relative;
 }
-.work,.about,.project{
+.work,.about,.project,.contact{
     width: 80%;
     height: 80vh;
     background-color: white;
@@ -30,7 +30,7 @@ a{
     overflow:scroll;
 }
 .button-group{
-    width: 400px;
+    width: 50%;
     height: 50px;
     position: absolute;
     left:50%;
@@ -41,7 +41,7 @@ a{
 }
 a{
     display: block;
-    width: 100px;
+    width: 20%;
     height: 30px;
     line-height: 30px;
     text-align: center;
@@ -49,7 +49,7 @@ a{
     background-color: black;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 18px;
     text-decoration: none;
 }
 a:hover{
@@ -57,7 +57,7 @@ a:hover{
     color: black;
 }
 
-#section1 a:nth-child(1),#section2 a:nth-child(2),#section3 a:nth-child(3){
+#section1 a:nth-child(1),#section2 a:nth-child(2),#section3 a:nth-child(3),#section3 a:nth-child(4){
     width: 130px;
     height: 45px;
     line-height: 45px;
@@ -165,6 +165,38 @@ a:hover{
 }
 #section3 .project .project-inner div:nth-child(6) div{
     background-image: url();
+}
+#section4 .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section4 .contact div{
+    width: 80%;
+    height: 40%;
+    margin: 0 auto;
+}
+#section4 .contact div div{
+    display: flex;
+    width: 80%;
+    justify-content:flex-end;
+}
+
+#section4 .contact table tr:nth-child(1) td:nth-child(1){
+    width: 50px;
+    height: 50px;
+    background-image: url(./image/phone-call.png);
+    background-size: cover;
+    background-position: center;
+    border: 10px solid white;
+}
+#section4 .contact table tr:nth-child(2) td:nth-child(1){
+    width: 50px;
+    height: 50px;
+    background-image: url(./image/email.png);
+    background-size: cover;
+    background-position: center;
+    border: 10px solid white;
 }
 footer{
     width: 100%;
