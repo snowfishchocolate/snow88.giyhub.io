@@ -62,7 +62,8 @@ a{
 .about{
     scroll-behavior: auto;
     overflow-y: auto; 
-    overflow:scroll;
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;
 }
 .button-group{
     width: 50%;
