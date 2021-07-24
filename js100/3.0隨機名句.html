@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #b09e99;
+            position: relative;
+        }
+        .text{
+            background-color: #d8cfcc;
+            width: 70%;
+            height: fit-content;
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,60%);
+            font-size: 50px;
+            padding-top: 100px;
+        }
+        button{
+            background-color: green;
+            padding:20px;
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,250%);
+            z-index: 20;
+            color: white;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <button>Generate Quote</button>
+    <div class="text">
+        
+    </div>
+    <script>
+        var div1='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur sint iste optio placeat dolor labore, reprehenderit ipsum aspernatur blanditiis maiores.'
+        var div2='Life is like a landscape. You live in the midst of it but can describe it only from the vantage point of distance.'
+        var div3='Humor is richly rewarding to the person who employs it. It has some value in gaining and holding attention. But it has no persuasive value at all.'
+        var div4='A critic is someone who never actually goes to the battle, yet who afterwards comes out shooting the wounded.'
+    
+        var div5='God save me from my friends. I can protect myself from my enemies.'
+   
+        var div6='The price of anything is the amount of life you exchange for it.'
+        var div7='Life is too short and sweet to be spent by cribbing and complaining about things. Here are some random quotes about the most wonderful gift that we.'
+        
+        var a =[div1,div2,div3,div4,div5,div6];
+        var clickBtn=document.querySelector('button');
+        clickBtn=addEventListener('click',function(){
+            var text=document.querySelector('.text');
+            text.innerHTML=`${a[Math.floor(Math.random()*6)]}`;
+        })
+    </script>
+</body>
+</html>

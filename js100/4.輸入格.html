@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #95b8d1;
+            position: relative;
+        }
+        main{
+            background-color: #f5f5f5;
+            width: 900px;
+            height: 300px;
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,50%);
+            position: relative;
+        }
+        #box{
+            text-transform: uppercase;
+        }
+        
+        .content{
+           position: absolute;
+           left:50%;
+           top:50%;
+           transform: translate(-50%,-50%);
+        }
+        p{
+            font-size: 20px;
+        }
+        input{
+            
+            width: 300px;
+            height: 30px;
+        }
+        button{
+            background-color: #95b8d1;
+            border: 0.5px solid rgb(0, 119, 255);
+            padding:20px;
+            font-size: 20px;
+        }
+        .redbox{
+            width: 220px;
+            height: 20px;
+            background-color: rgb(248, 171, 171);
+            border: red 0.5px solid;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="content">
+            <p>A Messge You Would Like To Pass</p>
+            <input type="text">
+            <button>send</button>
+            <p>Last Message Delivered</p>
+            <div id="box">hello wrold</div>
+           
+        </div>
+        
+    </main>
+    <script>
+        var clickBtn=document.querySelector('button');
+        clickBtn.addEventListener('click',function(){
+            var inputValue=document.querySelector('input').value;
+            var showBox=document.querySelector('#box');
+           
+            if (inputValue.length == 0){
+                //刷新頁面的function//
+                function myrefresh()
+                {window.location.reload();}
+
+                showBox.innerHTML=` <div class="redbox">please enter a value to pass</div>`;
+                
+                setTimeout("document.getElementById('box').style.display = 'none';", 1000);
+                setTimeout('myrefresh()',1000);
+                            }
+                            else {
+                                //用textcontent可以讓文字傳送出去後輸入框變白，但是用innerHTML不行//
+                                showBox.textContent =inputValue;
+                                document.querySelector('input').value = '';
+                            }
+
+        })
+                    function myrefresh()//傳送出去後刷新頁面//
+                            {
+                            window.location.reload();
+                            
+                            }
+                            
+    </script>
+    <script>
+    
+    </script>
+
+</body>
+</html>

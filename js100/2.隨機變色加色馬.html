@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        position: relative;
+    }
+    body,html{
+        padding: 0;
+        margin:0;
+    }
+    button{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        padding: 10px;
+    }
+    .showbox{
+        position: absolute; 
+         left: 50%; 
+         top: 70%; 
+        transform: translate(-50%,-50%);
+        font-size: 20px;
+    }
+
+
+</style>
+<body>
+    <div class="showbox"></div>
+    <button>
+        click me
+    </button>
+    <script>
+        
+        var a=["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
+        
+        
+        var showbox = document.querySelector('.showbox');
+        var clickBtn=document.querySelector('button');
+        clickBtn.addEventListener('click',function(){
+             a= Math.round(Math.random()*16777215).toString(16);
+             
+            document.querySelector('body').style.backgroundColor=`#${a}`;
+            showbox.innerHTML = `#${a}`
+            console.log(Math.floor(Math.random()*16777215));
+            console.log(a);
+        })
+    </script>
+</body>
+</html>
