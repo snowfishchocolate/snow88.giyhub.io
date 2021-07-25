@@ -21,6 +21,7 @@
   
 #a1,#a2,#a3,#a4{
     background:linear-gradient(45deg, #557777 50%, transparent 50%),linear-gradient(90deg, #ee6655 100%, transparent 100%);
+    background-attachment: fixed;
 }
 a{
     width: 200px;
