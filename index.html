@@ -21,10 +21,57 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script> -->
-    <link rel="stylesheet" href="./resume.css" />
+    <link rel="stylesheet" href="./resume1.css" />
   </head>
   <body>
     <div>
+      <!-- ////API---modal///////// -->
+      <div class="modal fade" id="api" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">作品選項</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <a href=" https://snowfishchocolate.github.io/api.TMDb/">TMDb電影API</a>
+              <!-- <a href="https://snowfishchocolate.github.io/api.dailyNews/">Daily news API</a> -->
+              <a href=" https://snowfishchocolate.github.io/api.weatherCard/">氣象局API</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /////////////////JS100---MODAL///////////// -->
+      <div class="modal fade" id="js100" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">作品選項</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <a href=" https://snowfishchocolate.github.io/js100.colorchange/">隨機變色+色碼</a>
+              <a href=" https://snowfishchocolate.github.io/js100.input/">輸入框</a>
+              <a href="https://snowfishchocolate.github.io/ljs100..plusdecrease/">加減</a>
+              <a href="https://snowfishchocolate.github.io/js100.vechikesSilde/">汽車silde</a>
+              <a href=" https://snowfishchocolate.github.io/js100.wordSlide/">文字slide</a>
+              <a href=" https://snowfishchocolate.github.io/js100.sweet/">甜點網站</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
       <main id="fullpage">
         <section class="section" id="a3">
           <div class="slide" data-anchor="section1" id="section1">
@@ -185,12 +232,17 @@
                 </div>
                 <div>
                   <div>
-                    <a>API練習</a>
+                    <button  data-bs-toggle="modal" data-bs-target="#api">
+                      <a>API練習</a>
+                    </button>
+                      
                   </div>
                 </div>
                 <div>
                   <div>
-                    <a href="https://snowfishchocolate.github.io/myproject.githib.io/">JS-100練習</a>
+                    <button  data-bs-toggle="modal" data-bs-target="#js100">
+                      <a>JS 100練習</a>
+                    </button>
                   </div>
                 </div>
                 <div>
