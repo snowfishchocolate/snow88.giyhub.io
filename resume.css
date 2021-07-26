@@ -24,7 +24,16 @@
     display: none;
   }
   
-  
+  .modal .modal-dialog .modal-body a{
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      background-color: white;
+      color: blue;
+  }
+  .modal .modal-dialog .modal-body a:hover{
+      text-decoration: underline blue;
+  }
 #a1,#a2,#a3,#a4{
     background:linear-gradient(45deg, #557777 50%, transparent 50%),linear-gradient(90deg, #ee6655 100%, transparent 100%);
     background-attachment: fixed;
@@ -42,8 +51,8 @@ a{
     margin-top: 300px;
 }
 .work,.about,.project,.contact{
-    width: 80%;
-    height: 100vh;
+    width: 85%;
+    height: 85vh;
     background-color: white;
     position: absolute;
     position: relative;
