@@ -270,9 +270,12 @@ footer{
         width: 60%;
     }
     #section3 .project .project-inner div:nth-child(1) a{
-        /* height:50px; */
-        /* line-height: 50px; */
         font-size: 19px;
+    }
+    #section3 .project .project-inner div:nth-child(3) a{
+       width: 200px;
+       /* display: flex; */
+       text-align: center;
     }
 }
 @media(max-width:629px){
@@ -286,6 +289,9 @@ footer{
     }
 }
 @media(max-width:481px){
+    #section3 .project .project-inner div:nth-child(3) a, #section3 .project .project-inner div:nth-child(2) a{
+        width: fit-content;
+    }
     .work div img{
         width: 60%;
     }
