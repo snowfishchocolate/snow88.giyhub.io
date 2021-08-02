@@ -9,22 +9,88 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    
-    <!-- //////////fullpage/////////// -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.slim.js"
-      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script> -->
-    <link rel="stylesheet" href="./resume.css" />
+    <link rel="stylesheet" href="./resume1.css" />
   </head>
   <body>
     <div>
+      <!-- /////////RWD modal/////////////// -->
+      <div class="modal fade" id="rwd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">作品選項</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/micorsoft/">Microsoft</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/micorsoft.git" class="code">(code)</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /////////project/////////////// -->
+      <div class="modal fade" id="project" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">作品選項</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table>
+                <tr>
+                  <td>
+                    <a href="https://snowfishchocolate.github.io/myproject.githib.io/">銀牛角牛排</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/myproject.githib.io.git" class="code">(code)</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /////////jquery/////////////// -->
+      <div class="modal fade" id="jquery" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">作品選項</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/todolist/">To do list</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/todolist.git" class="code">(code)</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- ////API---modal///////// -->
       <div class="modal fade" id="api" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -34,9 +100,61 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <a href=" https://snowfishchocolate.github.io/api.TMDb/">TMDb電影API</a>
-              <!-- <a href="https://snowfishchocolate.github.io/api.dailyNews/">Daily news API</a> -->
-              <a href=" https://snowfishchocolate.github.io/api.weatherCard/">氣象局API</a>
+              <table>
+                <tr>Fetch</tr>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/api.TMDb/">TMDb電影</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/api.TMDb.git" class="code">(code)</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/api.weatherCard/">氣象局</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/api.weatherCard.git" class="code">(code)</a>
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>Ajax</tr>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/api-alcohol/">Alcohol</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/api-alcohol.git" class="code">(code)</a>
+                </tr>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /////////////////SCSS-modal/////////////// -->
+      <div class="modal fade" id="scss" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">作品選項</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/scss.moonCard/">Moon card</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/scss.moonCard.git" class="code">(code)</a>
+                  </td>
+                </tr>
+              </table>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -53,12 +171,64 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <a href=" https://snowfishchocolate.github.io/js100.colorchange/">隨機變色+色碼</a>
-              <a href=" https://snowfishchocolate.github.io/js100.input/">輸入框</a>
-              <a href="https://snowfishchocolate.github.io/ljs100..plusdecrease/">加減</a>
-              <a href="https://snowfishchocolate.github.io/js100.vechikesSilde/">汽車silde</a>
-              <a href=" https://snowfishchocolate.github.io/js100.wordSlide/">文字slide</a>
-              <a href=" https://snowfishchocolate.github.io/js100.sweet/">甜點網站</a>
+              <table>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/js100.colorchange/">隨機變色</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/js100.colorchange.git" class="code">(code)</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/js100.input/">輸入框</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/js100.input.git" class="code">(code)</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://snowfishchocolate.github.io/ljs100..plusdecrease/">加減</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/ljs100..plusdecrease.git" class="code">(code)</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://snowfishchocolate.github.io/js100.vechikesSilde/">汽車silde</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/js100.vechikesSilde.git" class="code">(code)</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/js100.wordSlide/">文字slide</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/js100.wordSlide.git" class="code">(code)</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/js100.sweet/">甜點網站</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/js100.sweet.git" class="code">(code)</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=" https://snowfishchocolate.github.io/CRUD/">CRUD</a>
+                  </td>
+                  <td>
+                    <a href="https://github.com/snowfishchocolate/CRUD.git" class="code">(code)</a>
+                  </td>
+                </tr>
+              </table>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -115,18 +285,51 @@
                           【程式學習】<br>
                           雖不是本科系出身，但喜歡用網路看影片、逛商場、查詢資料，常常遇到網頁讓消費者不便利的網站，所以想設計出如何才能讓人使用順暢的網站，加上現在資訊流通，人人使用網際網路成為一大趨勢，種種原因令我想轉職投奔程式設計業。一進入這個領域才發現網頁幫人們處理很多事情。從課堂中我習得CSS、Javascript、Sass、Laravel.....等語法，雖然短短幾個月，學習範圍有限，因此我持續利用網路學習資源，例如六角學院、Youtube教學影片，學習更深層的語法。因為我很喜歡動態互動效果，也希望獲得撰寫效果的能力，所以開始挑戰練習JS 100。
                           希望自己設計的網站能獲得使用者的喜愛，平時練習寫程式外，更加強Adobe Illustrator和Adobe Photoshop的能力，把設計的物件加到個人網站中。
-                          目前我會的能力有:<br>
-                        1.CSS<br>
-                        2.Javascript<br>
-                        3.Bootstrap<br>
-                        4.RWD<br>
-                        5.網頁版面規劃、套版、特效互動設計。<br>
-                        6.API 串接相關經驗。<br>
-                        7. HTML<br>
-                        8.SCSS/SASS
-                        9.Adobe Illustrator<br>
-                        10.Adobe Photoshop<br>
-                        11.對學習新技術具有熱情，具備良好的溝通及團隊合作能力。
+                          專長:<br>
+                          <table>
+                            <tr>
+                              <td class="t1">程式設計</td>
+                              <td class="t2">美編設計</td>
+                              <td class="t3">工作態度</td>
+                            </tr>
+                            <tr>
+                              <td>CSS、HTML</td>
+                              <td>Adobe Illustrator</td>
+                              <td>對學習新技術具有熱情，具備良好的溝通及團隊合作能力。</td>
+                            </tr>
+                            <tr>
+                              <td>Javascrip、jQuery</td>
+                              <td>Adobe Photoshop</td>
+                              <td>樂觀活潑</td>
+                            </tr>
+                            <tr>
+                              <td>Bootstrap</td>
+                              <td>Adobe XD</td>
+                              <td>良好的溝通能力與團隊合作能力</td>
+                            </tr>
+                            <tr>
+                              <td>API 串接。Fetch、Ajax</td>
+                              <td>Figma</td>
+                              <td>喜歡接觸新事物</td>
+                            </tr>
+                            <tr>
+                              <td>RWD</td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>SCSS/SASS</td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                網頁版面規劃、套版、特效互動設計。
+                              </td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </table>
                         </div>
                       </div>
                     </div>
@@ -229,37 +432,44 @@
               <div class="project-inner">
                 <div>
                     <div>
-                      <a href=" https://snowfishchocolate.github.io/micorsoft/">RWD練習+切版</a>
+                      <button  data-bs-toggle="modal" data-bs-target="#rwd">
+                        <a>RWD+切版</a>
+                      </button>
                     </div>
                 </div>
                 <div>
                   <div>
                     <button  data-bs-toggle="modal" data-bs-target="#api">
-                      <a>API練習</a>
+                      <a>API串接</a>
                     </button>
-                      
                   </div>
                 </div>
                 <div>
                   <div>
                     <button  data-bs-toggle="modal" data-bs-target="#js100">
-                      <a>JS 100練習</a>
+                      <a>JavaScript</a>
                     </button>
                   </div>
                 </div>
                 <div>
                   <div>
-                    <a href="https://snowfishchocolate.github.io/myproject.githib.io/">個人專題</a>
+                    <button  data-bs-toggle="modal" data-bs-target="#project">
+                      <a>個人專題</a>
+                    </button>
                   </div>
                 </div>
+               <div>
+                 <div>
+                  <button  data-bs-toggle="modal" data-bs-target="#jquery">
+                    <a>jQuery</a>
+                  </button>
+                 </div>
+               </div>
                 <div>
                   <div>
-                    <a href=" https://snowfishchocolate.github.io/scss.moonCard/">SCSS練習</a>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <a href=" https://snowfishchocolate.github.io/CRUD/">CRUD</a>
+                    <button  data-bs-toggle="modal" data-bs-target="#scss">
+                      <a>SCSS</a>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -284,40 +494,8 @@
                 </tr>
               </table>
           </div>
-          <!-- <div class="slide" data-anchor="section4" id="section4">第三屏的第四屏</div> -->
-          <!-- <footer>copy right</footer> -->
         </section>
-        <!-- <section class="section" id="a4">第四屏</section> -->
       </main>
     </div>
-    <script>
-      $(function () {
-        $("#fullpage").fullpage();
-      });
-      //或添加内容。
-      $(function () {
-        $("#fullpage").fullpage({
-          verticalCentered: false,
-          css3: true,
-          // sectionsColor: ['#254875', '#00FF00', '#254587', '#695684'],
-          anchors: ["page1", "page2", "page3", "page4"],
-          navigation: true,
-          navigationPosition: "right",
-          navigationTooltips: ["fullPage.js", "Powerful", "Amazing", "Simple"],
-          //////////href///////////////////
-          anchors: ["section1", "section2", "section3", "section4"],
-        });
-      });
-      /////////////scroll smooth/////////////////
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-          });
-        });
-      });
-    </script>
   </body>
 </html>
