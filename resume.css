@@ -23,17 +23,26 @@
   .fp-controlArrow.fp-next,.fp-controlArrow.fp-prev{
     display: none;
   }
-  
-  .modal .modal-dialog .modal-body a{
+  .modal .modal-dialog .modal-body table td{
+      width: 100px;
+  }
+  .modal .modal-dialog .modal-body td:nth-child(odd) a{
       width: 100%;
       display: flex;
       justify-content: flex-start;
       background-color: white;
       color: blue;
   }
-  .modal .modal-dialog .modal-body a:hover{
+  .modal .modal-dialog .modal-body td:nth-child(even) a{
+      color: green;
+      background-color: transparent;
+  }
+  .modal .modal-dialog .modal-body td:nth-child(1) a:hover{
       text-decoration: underline blue;
   }
+  .modal .modal-dialog .modal-body td:nth-child(2) .code:hover{
+    text-decoration: underline green; 
+}
 #a1,#a2,#a3,#a4{
     background:linear-gradient(45deg, #557777 50%, transparent 50%),linear-gradient(90deg, #ee6655 100%, transparent 100%);
     background-attachment: fixed;
@@ -41,7 +50,6 @@
 a{
     width: 200px;
     height: 100px;
-    background-color: tomato;
 }
 .slide:nth-child(1){
     margin-top: 0;
@@ -89,10 +97,6 @@ a{
 .button-group{
     width: 50%;
     height: 50px;
-    /* position: absolute;
-    left:50%;
-    top:5%;
-    transform: translateX(-50%); */
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -150,6 +154,27 @@ a:hover{
 #section2 .accordion-body{
     font-size: 23px;
 }
+#section2 .accordion-body table{
+    border: 8px double #046494;
+    border-collapse:collapse;
+    text-align: center;
+}
+#section2 .accordion-body table .t1{
+    background-color: #0ceffe;
+}
+#section2 .accordion-body table .t2{
+    background-color: #039be5;
+    color: white;
+}
+#section2 .accordion-body table .t3{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#section2 .accordion-body table td{
+    border:2px solid rgb(55, 218, 240);
+}
+
 #section3 .project .project-inner{
     width: 80%;
     height: 90%;
@@ -172,6 +197,10 @@ a:hover{
     align-items: center;
     overflow: hidden;
 }
+#section3 .project .project-inner div div button{
+    border: transparent;
+    background-color: transparent;
+}
 #section3 .project .project-inner div a{
     width: 200px;
     height: 50px;
@@ -193,11 +222,20 @@ a:hover{
     border-radius: 15px;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 #section3 .project .project-inner div div:hover{
     width: 130%;
     height: 130%;
     transition-duration: 3s;
+}
+#section3 .project .project-inner div div .code{
+    background-image: url(./image/資產\ 2.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 10%;
+    left: 20%;
 }
 
 #section3 .project .project-inner div:nth-child(1) div{
@@ -217,10 +255,10 @@ a:hover{
     background-image: url(./image/steak.GIF);
 }
 #section3 .project .project-inner div:nth-child(5) div{
-    background-image: url(./image/月亮卡.GIF);
+    background-image: url(./image/todolist.GIF);
 }
 #section3 .project .project-inner div:nth-child(6) div{
-    background-image: url(./image/crud.GIF);
+    background-image: url(./image/月亮卡.GIF);
 }
 #section4 .contact {
     display: flex;
@@ -274,13 +312,13 @@ footer{
     }
     #section3 .project .project-inner div:nth-child(3) a{
        width: 200px;
-       /* display: flex; */
        text-align: center;
     }
 }
 @media(max-width:629px){
     #section3 .project .project-inner div a{
         height: 90px;
+       
     }
 }
 @media (max-width:556px){
@@ -289,9 +327,6 @@ footer{
     }
 }
 @media(max-width:481px){
-    #section3 .project .project-inner div:nth-child(3) a, #section3 .project .project-inner div:nth-child(2) a{
-        width: fit-content;
-    }
     .work div img{
         width: 60%;
     }
@@ -313,8 +348,13 @@ footer{
     #section1 .work img{
         width: 70%;
     }
+
     #section3 .project .project-inner div:nth-child(1) a,#section3 .project .project-inner div:nth-child(1) button{
         height: 100%;
+        font-size: 16px;
+    }
+    #section3 .project .project-inner  a{
+        font-size: 16px;
     }
 }
 @media(max-width:321px){
