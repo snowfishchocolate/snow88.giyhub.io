@@ -24,7 +24,7 @@
     display: none;
   }
   .modal .modal-dialog .modal-body table td{
-      width: 100px;
+      width: 200px;
   }
   .modal .modal-dialog .modal-body td:nth-child(odd) a{
       width: 100%;
